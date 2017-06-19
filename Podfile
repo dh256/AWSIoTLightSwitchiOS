@@ -6,4 +6,5 @@ use_frameworks!
 target :'AWSIoTDemo' do
     pod 'AWSCore'
     pod 'AWSIoT'
+    pod 'SwiftyJSON'
 end

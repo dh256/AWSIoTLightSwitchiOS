@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		492CE6131EF7C92F009253CE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492CE6121EF7C92F009253CE /* Constants.swift */; };
 		49DAEBEC1ECF039700FBC763 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DAEBEB1ECF039700FBC763 /* AppDelegate.swift */; };
 		49DAEBEE1ECF039700FBC763 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DAEBED1ECF039700FBC763 /* ViewController.swift */; };
 		49DAEBF11ECF039700FBC763 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49DAEBEF1ECF039700FBC763 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 
 /* Begin PBXFileReference section */
 		2473124AF17284FDDA4E8212 /* Pods-AWSIoTDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AWSIoTDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-AWSIoTDemo/Pods-AWSIoTDemo.release.xcconfig"; sourceTree = "<group>"; };
+		492CE6121EF7C92F009253CE /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		49DAEBE81ECF039700FBC763 /* AWSIoTDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AWSIoTDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49DAEBEB1ECF039700FBC763 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49DAEBED1ECF039700FBC763 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				49DAEBF21ECF039700FBC763 /* Assets.xcassets */,
 				49DAEBF41ECF039700FBC763 /* LaunchScreen.storyboard */,
 				49EE302F1EF4284D006A37E1 /* AWS.swift */,
+				492CE6121EF7C92F009253CE /* Constants.swift */,
 			);
 			path = AWSIoTDemo;
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				492CE6131EF7C92F009253CE /* Constants.swift in Sources */,
 				49DAEBEE1ECF039700FBC763 /* ViewController.swift in Sources */,
 				49DAEBEC1ECF039700FBC763 /* AppDelegate.swift in Sources */,
 				49EE30361EF439F3006A37E1 /* Light.swift in Sources */,

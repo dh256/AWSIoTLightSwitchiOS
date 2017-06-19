@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6EC645B61915AA61AD31F759836F320B"
+               BlueprintIdentifier = "98F748335C2F5D50D4FCE0D48D453B47"
                BuildableName = "Pods_AWSIoTDemo.framework"
                BlueprintName = "Pods-AWSIoTDemo"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6EC645B61915AA61AD31F759836F320B"
+            BlueprintIdentifier = "98F748335C2F5D50D4FCE0D48D453B47"
             BuildableName = "Pods_AWSIoTDemo.framework"
             BlueprintName = "Pods-AWSIoTDemo"
             ReferencedContainer = "container:Pods.xcodeproj">

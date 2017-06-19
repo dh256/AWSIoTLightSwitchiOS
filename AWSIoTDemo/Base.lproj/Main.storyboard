@@ -42,21 +42,21 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rWi-8T-uW5">
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="rWi-8T-uW5">
                                 <rect key="frame" x="177" y="60" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="redLightSwitchPressed:" destination="BYZ-38-t0r" eventType="valueChanged" id="G9P-v1-GMD"/>
                                 </connections>
                             </switch>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CFF-QR-6Hx">
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="CFF-QR-6Hx">
                                 <rect key="frame" x="177" y="114" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="amberLightSwitchPressed:" destination="BYZ-38-t0r" eventType="valueChanged" id="ves-H1-yNt"/>
                                 </connections>
                             </switch>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ROG-4J-3B1">
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ROG-4J-3B1">
                                 <rect key="frame" x="177" y="167" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
@@ -74,9 +74,23 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="9tP-e1-xId">
+                                <rect key="frame" x="206" y="268" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="9tP-e1-xId" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EuP-ub-mmL"/>
+                            <constraint firstItem="9tP-e1-xId" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="RCM-iZ-OHy"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="activityViewIndicator" destination="9tP-e1-xId" id="BXe-Ia-Bu6"/>
+                        <outlet property="amberSwitch" destination="CFF-QR-6Hx" id="VH3-Pa-zQh"/>
+                        <outlet property="connectButton" destination="OUO-kq-FwS" id="G8x-oy-etR"/>
+                        <outlet property="greenSwitch" destination="ROG-4J-3B1" id="kkj-dT-aFe"/>
+                        <outlet property="redSwitch" destination="rWi-8T-uW5" id="b0P-wY-TgA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

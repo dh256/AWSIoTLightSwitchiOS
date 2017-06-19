@@ -10,6 +10,16 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    // MARK: Outlets
+    @IBOutlet weak var redSwitch: UISwitch!
+    @IBOutlet weak var amberSwitch: UISwitch!
+    @IBOutlet weak var greenSwitch: UISwitch!
+    @IBOutlet weak var connectButton: UIBarButtonItem!
+    
+    @IBOutlet weak var activityViewIndicator: UIActivityIndicatorView!
+    
+    // MARK: Actions
+    
     /// Send on/off message to AWS IoT
     @IBAction func redLightSwitchPressed(_ sender: Any) {
         Lights.sharedInstance.change(light: "RED")
@@ -27,7 +37,14 @@ class ViewController: UIViewController {
     
     /// Connect to AWS IoT
     @IBAction func connectButton(_ sender: Any) {
-        
+        if !AWS.isConnected() {
+            AWS.connect()
+            connectButton.title = "Disconnect"
+        }
+        else {
+            AWS.disconnect()
+            connectButton.title = "Connect"
+        }
     }
     
     override func viewDidLoad() {
@@ -35,6 +52,14 @@ class ViewController: UIViewController {
         
         // Do any additional setup after loading the view, typically from a nib.
         setInitialLightState()
+        
+        // set button colour
+        redSwitch.tintColor = UIColor.red
+        redSwitch.onTintColor = UIColor.red
+        amberSwitch.tintColor = UIColor.yellow
+        amberSwitch.onTintColor = UIColor.yellow
+        greenSwitch.tintColor = UIColor.green
+        greenSwitch.onTintColor = UIColor.green
     }
 
     override func didReceiveMemoryWarning() {
@@ -47,7 +72,6 @@ class ViewController: UIViewController {
     func setInitialLightState() {
         // this should read from AWS
         Lights.sharedInstance.allOff()
-        
     }
 
 

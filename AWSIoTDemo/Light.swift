@@ -7,10 +7,11 @@
 //
 
 import Foundation
+import SwiftyJSON
 
-enum LightState : String {
-    case Off
-    case On
+enum LightState : Int {
+    case Off=0
+    case On=1
 }
 
 struct Light {
@@ -24,6 +25,8 @@ struct Light {
     
     mutating func set(state: LightState) {
         self.state = state
+        let jsonString = "{\"light\": \"\(name)\",\"state\": \(self.state.rawValue)}"
+        AWS.publish(string: jsonString)
     }
     
     mutating func change() {
