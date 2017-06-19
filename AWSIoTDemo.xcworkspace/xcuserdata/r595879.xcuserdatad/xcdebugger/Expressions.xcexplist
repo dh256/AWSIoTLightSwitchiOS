@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "ViewController.redLightSwitchPressed(Any) -&gt; ():ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "Lights.sharedInstance.lights[0]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Light.change() -&gt; ():Light.swift">
+      </ContextState>
+      <ContextState
+         contextName = "Light.set(state : LightState) -&gt; ():Light.swift">
+      </ContextState>
+      <ContextState
+         contextName = "Light.change(updateAWS : Bool) -&gt; ():Light.swift">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

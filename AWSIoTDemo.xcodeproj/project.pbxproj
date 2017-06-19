@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		492CE6131EF7C92F009253CE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492CE6121EF7C92F009253CE /* Constants.swift */; };
+		492CE6151EF7FBE0009253CE /* awsiot-identity.p12 in Resources */ = {isa = PBXBuildFile; fileRef = 492CE6141EF7FBE0009253CE /* awsiot-identity.p12 */; };
 		49DAEBEC1ECF039700FBC763 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DAEBEB1ECF039700FBC763 /* AppDelegate.swift */; };
 		49DAEBEE1ECF039700FBC763 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DAEBED1ECF039700FBC763 /* ViewController.swift */; };
 		49DAEBF11ECF039700FBC763 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49DAEBEF1ECF039700FBC763 /* Main.storyboard */; };
@@ -16,8 +17,6 @@
 		49DAEC011ECF039700FBC763 /* AWSIoTDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DAEC001ECF039700FBC763 /* AWSIoTDemoTests.swift */; };
 		49DAEC0E1ECF29AA00FBC763 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 49DAEC0D1ECF29AA00FBC763 /* Podfile */; };
 		49EE30301EF4284D006A37E1 /* AWS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EE302F1EF4284D006A37E1 /* AWS.swift */; };
-		49EE30331EF42A5B006A37E1 /* awsiot-identity.p12 in Resources */ = {isa = PBXBuildFile; fileRef = 49EE30321EF42A5B006A37E1 /* awsiot-identity.p12 */; };
-		49EE30341EF42A5B006A37E1 /* awsiot-identity.p12 in Resources */ = {isa = PBXBuildFile; fileRef = 49EE30321EF42A5B006A37E1 /* awsiot-identity.p12 */; };
 		49EE30361EF439F3006A37E1 /* Light.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EE30351EF439F3006A37E1 /* Light.swift */; };
 		49EE30371EF439F3006A37E1 /* Light.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EE30351EF439F3006A37E1 /* Light.swift */; };
 		EC71F80BB962D4215F4C2789 /* Pods_AWSIoTDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D711F0A586C86DD2F45AA9F6 /* Pods_AWSIoTDemo.framework */; };
@@ -36,6 +35,7 @@
 /* Begin PBXFileReference section */
 		2473124AF17284FDDA4E8212 /* Pods-AWSIoTDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AWSIoTDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-AWSIoTDemo/Pods-AWSIoTDemo.release.xcconfig"; sourceTree = "<group>"; };
 		492CE6121EF7C92F009253CE /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		492CE6141EF7FBE0009253CE /* awsiot-identity.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "awsiot-identity.p12"; sourceTree = "<group>"; };
 		49DAEBE81ECF039700FBC763 /* AWSIoTDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AWSIoTDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49DAEBEB1ECF039700FBC763 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49DAEBED1ECF039700FBC763 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -48,7 +48,6 @@
 		49DAEC021ECF039700FBC763 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		49DAEC0D1ECF29AA00FBC763 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		49EE302F1EF4284D006A37E1 /* AWS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AWS.swift; sourceTree = "<group>"; };
-		49EE30321EF42A5B006A37E1 /* awsiot-identity.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "awsiot-identity.p12"; sourceTree = "<group>"; };
 		49EE30351EF439F3006A37E1 /* Light.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Light.swift; sourceTree = "<group>"; };
 		85CA281FC90207990C74950A /* Pods-AWSIoTDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AWSIoTDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AWSIoTDemo/Pods-AWSIoTDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		D711F0A586C86DD2F45AA9F6 /* Pods_AWSIoTDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AWSIoTDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -122,7 +121,7 @@
 		49EE30311EF429BE006A37E1 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
-				49EE30321EF42A5B006A37E1 /* awsiot-identity.p12 */,
+				492CE6141EF7FBE0009253CE /* awsiot-identity.p12 */,
 				49DAEBF71ECF039700FBC763 /* Info.plist */,
 			);
 			name = SupportingFiles;
@@ -235,7 +234,7 @@
 			files = (
 				49DAEBF61ECF039700FBC763 /* LaunchScreen.storyboard in Resources */,
 				49DAEBF31ECF039700FBC763 /* Assets.xcassets in Resources */,
-				49EE30331EF42A5B006A37E1 /* awsiot-identity.p12 in Resources */,
+				492CE6151EF7FBE0009253CE /* awsiot-identity.p12 in Resources */,
 				49DAEC0E1ECF29AA00FBC763 /* Podfile in Resources */,
 				49DAEBF11ECF039700FBC763 /* Main.storyboard in Resources */,
 			);
@@ -245,7 +244,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49EE30341EF42A5B006A37E1 /* awsiot-identity.p12 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

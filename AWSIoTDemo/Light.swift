@@ -14,7 +14,7 @@ enum LightState : Int {
     case On=1
 }
 
-struct Light {
+class Light {
     let name: String
     var state: LightState
     
@@ -23,24 +23,26 @@ struct Light {
         self.state = state
     }
     
-    mutating func set(state: LightState) {
+    func set(state: LightState, updateAWS: Bool = false) {
         self.state = state
-        let jsonString = "{\"light\": \"\(name)\",\"state\": \(self.state.rawValue)}"
-        AWS.publish(string: jsonString)
+        if updateAWS {
+            let jsonString = "{\"name\": \"\(name)\",\"state\": \(self.state.rawValue)}"
+            AWS.publish(string: jsonString)
+        }
     }
     
-    mutating func change() {
+    func change(updateAWS: Bool = false) {
         if self.state == LightState.On {
-            set(state: LightState.Off)
+            set(state: LightState.Off, updateAWS: updateAWS)
         }
         else {
-            set(state: LightState.On)
+            set(state: LightState.On, updateAWS: updateAWS)
         }
     }
 }
 
-struct Lights {
-    static let sharedInstance = Lights()
+class Lights {
+    static var sharedInstance = Lights()
     var lights = [Light]()
     
     init() {
@@ -50,16 +52,16 @@ struct Lights {
     }
     
     func change(light name: String) {
-        for var light in lights {
+        for light in lights {
             if light.name == name {
-                light.change()
+                light.change(updateAWS: true)
                 break;
             }
         }
     }
     
     func set(light name: String, state: LightState) {
-        for var light in lights {
+        for light in lights {
             if light.name == name {
                 light.set(state: state)
                 break;
@@ -68,15 +70,14 @@ struct Lights {
     }
     
     func allOff() {
-        for var light in lights {
-            light.set(state: LightState.Off)
+        for light in lights {
+            light.set(state: LightState.Off, updateAWS: false)
         }
     }
     
     func allOn() {
-        for var light in lights {
-            light.set(state: LightState.On)
+        for light in lights {
+            light.set(state: LightState.On, updateAWS: false)
         }
     }
-    
 }
