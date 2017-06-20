@@ -14,11 +14,12 @@
 		49DAEBF11ECF039700FBC763 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49DAEBEF1ECF039700FBC763 /* Main.storyboard */; };
 		49DAEBF31ECF039700FBC763 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49DAEBF21ECF039700FBC763 /* Assets.xcassets */; };
 		49DAEBF61ECF039700FBC763 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49DAEBF41ECF039700FBC763 /* LaunchScreen.storyboard */; };
-		49DAEC011ECF039700FBC763 /* AWSIoTDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DAEC001ECF039700FBC763 /* AWSIoTDemoTests.swift */; };
+		49DAEC011ECF039700FBC763 /* AWSIoTLightSwitchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DAEC001ECF039700FBC763 /* AWSIoTLightSwitchTests.swift */; };
 		49DAEC0E1ECF29AA00FBC763 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 49DAEC0D1ECF29AA00FBC763 /* Podfile */; };
 		49EE30301EF4284D006A37E1 /* AWS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EE302F1EF4284D006A37E1 /* AWS.swift */; };
 		49EE30361EF439F3006A37E1 /* Light.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EE30351EF439F3006A37E1 /* Light.swift */; };
 		49EE30371EF439F3006A37E1 /* Light.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EE30351EF439F3006A37E1 /* Light.swift */; };
+		5B71F98EA75469D87B47B523 /* Pods_AWSIoTLightSwitch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47B00387E002C158EBB5A6AF /* Pods_AWSIoTLightSwitch.framework */; };
 		EC71F80BB962D4215F4C2789 /* Pods_AWSIoTDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D711F0A586C86DD2F45AA9F6 /* Pods_AWSIoTDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,29 +29,30 @@
 			containerPortal = 49DAEBE01ECF039700FBC763 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 49DAEBE71ECF039700FBC763;
-			remoteInfo = AWSIoTDemo;
+			remoteInfo = AWSIoTLightSwitch;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2473124AF17284FDDA4E8212 /* Pods-AWSIoTDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AWSIoTDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-AWSIoTDemo/Pods-AWSIoTDemo.release.xcconfig"; sourceTree = "<group>"; };
+		47B00387E002C158EBB5A6AF /* Pods_AWSIoTLightSwitch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AWSIoTLightSwitch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		492CE6121EF7C92F009253CE /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		492CE6141EF7FBE0009253CE /* awsiot-identity.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "awsiot-identity.p12"; sourceTree = "<group>"; };
-		49DAEBE81ECF039700FBC763 /* AWSIoTDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AWSIoTDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		49DAEBE81ECF039700FBC763 /* AWSIoTLightSwitch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AWSIoTLightSwitch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49DAEBEB1ECF039700FBC763 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49DAEBED1ECF039700FBC763 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		49DAEBF01ECF039700FBC763 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		49DAEBF21ECF039700FBC763 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49DAEBF51ECF039700FBC763 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		49DAEBF71ECF039700FBC763 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		49DAEBFC1ECF039700FBC763 /* AWSIoTDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AWSIoTDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		49DAEC001ECF039700FBC763 /* AWSIoTDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWSIoTDemoTests.swift; sourceTree = "<group>"; };
+		49DAEBFC1ECF039700FBC763 /* AWSIoTLightSwitchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AWSIoTLightSwitchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		49DAEC001ECF039700FBC763 /* AWSIoTLightSwitchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWSIoTLightSwitchTests.swift; sourceTree = "<group>"; };
 		49DAEC021ECF039700FBC763 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		49DAEC0D1ECF29AA00FBC763 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		49EE302F1EF4284D006A37E1 /* AWS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AWS.swift; sourceTree = "<group>"; };
 		49EE30351EF439F3006A37E1 /* Light.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Light.swift; sourceTree = "<group>"; };
-		85CA281FC90207990C74950A /* Pods-AWSIoTDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AWSIoTDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AWSIoTDemo/Pods-AWSIoTDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		D711F0A586C86DD2F45AA9F6 /* Pods_AWSIoTDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AWSIoTDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7256A379C44E59FFAFBE2E52 /* Pods-AWSIoTLightSwitch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AWSIoTLightSwitch.release.xcconfig"; path = "Pods/Target Support Files/Pods-AWSIoTLightSwitch/Pods-AWSIoTLightSwitch.release.xcconfig"; sourceTree = "<group>"; };
+		ABD99D28C367BC1C1EA5A9E0 /* Pods-AWSIoTLightSwitch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AWSIoTLightSwitch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AWSIoTLightSwitch/Pods-AWSIoTLightSwitch.debug.xcconfig"; sourceTree = "<group>"; };
+		D711F0A586C86DD2F45AA9F6 /* Pods_AWSIoTDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AWSIoTLightSwitch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC71F80BB962D4215F4C2789 /* Pods_AWSIoTDemo.framework in Frameworks */,
+				5B71F98EA75469D87B47B523 /* Pods_AWSIoTLightSwitch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,8 +79,8 @@
 			isa = PBXGroup;
 			children = (
 				49DAEC0D1ECF29AA00FBC763 /* Podfile */,
-				49DAEBEA1ECF039700FBC763 /* AWSIoTDemo */,
-				49DAEBFF1ECF039700FBC763 /* AWSIoTDemoTests */,
+				49DAEBEA1ECF039700FBC763 /* AWSIoTLightSwitch */,
+				49DAEBFF1ECF039700FBC763 /* AWSIoTLightSwitchTests */,
 				49DAEBE91ECF039700FBC763 /* Products */,
 				D3324F64E0C78D54678D6842 /* Pods */,
 				98B288E119FE784245548EC7 /* Frameworks */,
@@ -87,13 +90,13 @@
 		49DAEBE91ECF039700FBC763 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				49DAEBE81ECF039700FBC763 /* AWSIoTDemo.app */,
-				49DAEBFC1ECF039700FBC763 /* AWSIoTDemoTests.xctest */,
+				49DAEBE81ECF039700FBC763 /* AWSIoTLightSwitch.app */,
+				49DAEBFC1ECF039700FBC763 /* AWSIoTLightSwitchTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		49DAEBEA1ECF039700FBC763 /* AWSIoTDemo */ = {
+		49DAEBEA1ECF039700FBC763 /* AWSIoTLightSwitch */ = {
 			isa = PBXGroup;
 			children = (
 				49EE30311EF429BE006A37E1 /* SupportingFiles */,
@@ -106,16 +109,16 @@
 				49EE302F1EF4284D006A37E1 /* AWS.swift */,
 				492CE6121EF7C92F009253CE /* Constants.swift */,
 			);
-			path = AWSIoTDemo;
+			path = AWSIoTLightSwitch;
 			sourceTree = "<group>";
 		};
-		49DAEBFF1ECF039700FBC763 /* AWSIoTDemoTests */ = {
+		49DAEBFF1ECF039700FBC763 /* AWSIoTLightSwitchTests */ = {
 			isa = PBXGroup;
 			children = (
-				49DAEC001ECF039700FBC763 /* AWSIoTDemoTests.swift */,
+				49DAEC001ECF039700FBC763 /* AWSIoTLightSwitchTests.swift */,
 				49DAEC021ECF039700FBC763 /* Info.plist */,
 			);
-			path = AWSIoTDemoTests;
+			path = AWSIoTLightSwitchTests;
 			sourceTree = "<group>";
 		};
 		49EE30311EF429BE006A37E1 /* SupportingFiles */ = {
@@ -131,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				D711F0A586C86DD2F45AA9F6 /* Pods_AWSIoTDemo.framework */,
+				47B00387E002C158EBB5A6AF /* Pods_AWSIoTLightSwitch.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -138,8 +142,8 @@
 		D3324F64E0C78D54678D6842 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				85CA281FC90207990C74950A /* Pods-AWSIoTDemo.debug.xcconfig */,
-				2473124AF17284FDDA4E8212 /* Pods-AWSIoTDemo.release.xcconfig */,
+				ABD99D28C367BC1C1EA5A9E0 /* Pods-AWSIoTLightSwitch.debug.xcconfig */,
+				7256A379C44E59FFAFBE2E52 /* Pods-AWSIoTLightSwitch.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -147,9 +151,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		49DAEBE71ECF039700FBC763 /* AWSIoTDemo */ = {
+		49DAEBE71ECF039700FBC763 /* AWSIoTLightSwitch */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 49DAEC051ECF039700FBC763 /* Build configuration list for PBXNativeTarget "AWSIoTDemo" */;
+			buildConfigurationList = 49DAEC051ECF039700FBC763 /* Build configuration list for PBXNativeTarget "AWSIoTLightSwitch" */;
 			buildPhases = (
 				A3B0BC2E0038DFD92E1BE477 /* [CP] Check Pods Manifest.lock */,
 				49DAEBE41ECF039700FBC763 /* Sources */,
@@ -162,14 +166,14 @@
 			);
 			dependencies = (
 			);
-			name = AWSIoTDemo;
-			productName = AWSIoTDemo;
-			productReference = 49DAEBE81ECF039700FBC763 /* AWSIoTDemo.app */;
+			name = AWSIoTLightSwitch;
+			productName = AWSIoTLightSwitch;
+			productReference = 49DAEBE81ECF039700FBC763 /* AWSIoTLightSwitch.app */;
 			productType = "com.apple.product-type.application";
 		};
-		49DAEBFB1ECF039700FBC763 /* AWSIoTDemoTests */ = {
+		49DAEBFB1ECF039700FBC763 /* AWSIoTLightSwitchTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 49DAEC081ECF039700FBC763 /* Build configuration list for PBXNativeTarget "AWSIoTDemoTests" */;
+			buildConfigurationList = 49DAEC081ECF039700FBC763 /* Build configuration list for PBXNativeTarget "AWSIoTLightSwitchTests" */;
 			buildPhases = (
 				49DAEBF81ECF039700FBC763 /* Sources */,
 				49DAEBF91ECF039700FBC763 /* Frameworks */,
@@ -180,9 +184,9 @@
 			dependencies = (
 				49DAEBFE1ECF039700FBC763 /* PBXTargetDependency */,
 			);
-			name = AWSIoTDemoTests;
-			productName = AWSIoTDemoTests;
-			productReference = 49DAEBFC1ECF039700FBC763 /* AWSIoTDemoTests.xctest */;
+			name = AWSIoTLightSwitchTests;
+			productName = AWSIoTLightSwitchTests;
+			productReference = 49DAEBFC1ECF039700FBC763 /* AWSIoTLightSwitchTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -208,7 +212,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 49DAEBE31ECF039700FBC763 /* Build configuration list for PBXProject "AWSIoTDemo" */;
+			buildConfigurationList = 49DAEBE31ECF039700FBC763 /* Build configuration list for PBXProject "AWSIoTLightSwitch" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -221,8 +225,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				49DAEBE71ECF039700FBC763 /* AWSIoTDemo */,
-				49DAEBFB1ECF039700FBC763 /* AWSIoTDemoTests */,
+				49DAEBE71ECF039700FBC763 /* AWSIoTLightSwitch */,
+				49DAEBFB1ECF039700FBC763 /* AWSIoTLightSwitchTests */,
 			);
 		};
 /* End PBXProject section */
@@ -277,7 +281,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AWSIoTDemo/Pods-AWSIoTDemo-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AWSIoTLightSwitch/Pods-AWSIoTLightSwitch-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C4968F35133C07641545256C /* [CP] Embed Pods Frameworks */ = {
@@ -292,7 +296,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AWSIoTDemo/Pods-AWSIoTDemo-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AWSIoTLightSwitch/Pods-AWSIoTLightSwitch-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -315,7 +319,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				49EE30371EF439F3006A37E1 /* Light.swift in Sources */,
-				49DAEC011ECF039700FBC763 /* AWSIoTDemoTests.swift in Sources */,
+				49DAEC011ECF039700FBC763 /* AWSIoTLightSwitchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,7 +328,7 @@
 /* Begin PBXTargetDependency section */
 		49DAEBFE1ECF039700FBC763 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 49DAEBE71ECF039700FBC763 /* AWSIoTDemo */;
+			target = 49DAEBE71ECF039700FBC763 /* AWSIoTLightSwitch */;
 			targetProxy = 49DAEBFD1ECF039700FBC763 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -442,13 +446,13 @@
 		};
 		49DAEC061ECF039700FBC763 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 85CA281FC90207990C74950A /* Pods-AWSIoTDemo.debug.xcconfig */;
+			baseConfigurationReference = ABD99D28C367BC1C1EA5A9E0 /* Pods-AWSIoTLightSwitch.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = N34E47Y98M;
-				INFOPLIST_FILE = AWSIoTDemo/Info.plist;
+				INFOPLIST_FILE = AWSIoTLightSwitch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jpmorgan.awm.awmias.AWSIoTDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jpmorgan.awm.awmias.AWSIoTLightSwitch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -456,13 +460,13 @@
 		};
 		49DAEC071ECF039700FBC763 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2473124AF17284FDDA4E8212 /* Pods-AWSIoTDemo.release.xcconfig */;
+			baseConfigurationReference = 7256A379C44E59FFAFBE2E52 /* Pods-AWSIoTLightSwitch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = N34E47Y98M;
-				INFOPLIST_FILE = AWSIoTDemo/Info.plist;
+				INFOPLIST_FILE = AWSIoTLightSwitch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jpmorgan.awm.awmias.AWSIoTDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jpmorgan.awm.awmias.AWSIoTLightSwitch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -474,12 +478,12 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = N34E47Y98M;
-				INFOPLIST_FILE = AWSIoTDemoTests/Info.plist;
+				INFOPLIST_FILE = AWSIoTLightSwitchTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jpmorgan.awm.awmias.AWSIoTDemoTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jpmorgan.awm.awmias.AWSIoTLightSwitchTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AWSIoTDemo.app/AWSIoTDemo";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AWSIoTLightSwitch.app/AWSIoTLightSwitch";
 			};
 			name = Debug;
 		};
@@ -489,19 +493,19 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = N34E47Y98M;
-				INFOPLIST_FILE = AWSIoTDemoTests/Info.plist;
+				INFOPLIST_FILE = AWSIoTLightSwitchTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jpmorgan.awm.awmias.AWSIoTDemoTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jpmorgan.awm.awmias.AWSIoTLightSwitchTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AWSIoTDemo.app/AWSIoTDemo";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AWSIoTLightSwitch.app/AWSIoTLightSwitch";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		49DAEBE31ECF039700FBC763 /* Build configuration list for PBXProject "AWSIoTDemo" */ = {
+		49DAEBE31ECF039700FBC763 /* Build configuration list for PBXProject "AWSIoTLightSwitch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				49DAEC031ECF039700FBC763 /* Debug */,
@@ -510,7 +514,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		49DAEC051ECF039700FBC763 /* Build configuration list for PBXNativeTarget "AWSIoTDemo" */ = {
+		49DAEC051ECF039700FBC763 /* Build configuration list for PBXNativeTarget "AWSIoTLightSwitch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				49DAEC061ECF039700FBC763 /* Debug */,
@@ -519,7 +523,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		49DAEC081ECF039700FBC763 /* Build configuration list for PBXNativeTarget "AWSIoTDemoTests" */ = {
+		49DAEC081ECF039700FBC763 /* Build configuration list for PBXNativeTarget "AWSIoTLightSwitchTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				49DAEC091ECF039700FBC763 /* Debug */,

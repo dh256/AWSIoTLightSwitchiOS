@@ -14,7 +14,7 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-AWSIoTDemo.xcscheme</key>
+		<key>Pods-AWSIoTLightSwitch.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -27,7 +27,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>3CC8FE0E7D4E2F859EE08C384F951BE2</key>
+		<key>6BD3C859F4637E1B5F8C43FD8BC3BB86</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -37,7 +37,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>98F748335C2F5D50D4FCE0D48D453B47</key>
+		<key>BD3468794621FCC1B1786F3CF40F5E8D</key>
 		<dict>
 			<key>primary</key>
 			<true/>

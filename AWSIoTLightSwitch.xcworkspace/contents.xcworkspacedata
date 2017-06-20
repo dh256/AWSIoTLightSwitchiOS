@@ -2,9 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:AWSIoTDemo.xcodeproj">
+      location = "group:/Users/r595879/Code/Projects/AWSIoTLightSwitch/AWSIoTLightSwitch.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:AWSIoTLightSwitch.xcodeproj">
    </FileRef>
 </Workspace>
