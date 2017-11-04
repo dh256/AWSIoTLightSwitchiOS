@@ -20,7 +20,7 @@
 		49EE30361EF439F3006A37E1 /* Light.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EE30351EF439F3006A37E1 /* Light.swift */; };
 		49EE30371EF439F3006A37E1 /* Light.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EE30351EF439F3006A37E1 /* Light.swift */; };
 		5B71F98EA75469D87B47B523 /* Pods_AWSIoTLightSwitch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47B00387E002C158EBB5A6AF /* Pods_AWSIoTLightSwitch.framework */; };
-		EC71F80BB962D4215F4C2789 /* Pods_AWSIoTDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D711F0A586C86DD2F45AA9F6 /* Pods_AWSIoTDemo.framework */; };
+		EC71F80BB962D4215F4C2789 /* Pods_AWSIoTLightSwitch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D711F0A586C86DD2F45AA9F6 /* Pods_AWSIoTLightSwitch.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +52,7 @@
 		49EE30351EF439F3006A37E1 /* Light.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Light.swift; sourceTree = "<group>"; };
 		7256A379C44E59FFAFBE2E52 /* Pods-AWSIoTLightSwitch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AWSIoTLightSwitch.release.xcconfig"; path = "Pods/Target Support Files/Pods-AWSIoTLightSwitch/Pods-AWSIoTLightSwitch.release.xcconfig"; sourceTree = "<group>"; };
 		ABD99D28C367BC1C1EA5A9E0 /* Pods-AWSIoTLightSwitch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AWSIoTLightSwitch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AWSIoTLightSwitch/Pods-AWSIoTLightSwitch.debug.xcconfig"; sourceTree = "<group>"; };
-		D711F0A586C86DD2F45AA9F6 /* Pods_AWSIoTDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AWSIoTLightSwitch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D711F0A586C86DD2F45AA9F6 /* Pods_AWSIoTLightSwitch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AWSIoTLightSwitch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC71F80BB962D4215F4C2789 /* Pods_AWSIoTDemo.framework in Frameworks */,
+				EC71F80BB962D4215F4C2789 /* Pods_AWSIoTLightSwitch.framework in Frameworks */,
 				5B71F98EA75469D87B47B523 /* Pods_AWSIoTLightSwitch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -133,7 +133,7 @@
 		98B288E119FE784245548EC7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D711F0A586C86DD2F45AA9F6 /* Pods_AWSIoTDemo.framework */,
+				D711F0A586C86DD2F45AA9F6 /* Pods_AWSIoTLightSwitch.framework */,
 				47B00387E002C158EBB5A6AF /* Pods_AWSIoTLightSwitch.framework */,
 			);
 			name = Frameworks;
@@ -201,12 +201,12 @@
 				TargetAttributes = {
 					49DAEBE71ECF039700FBC763 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = N34E47Y98M;
+						DevelopmentTeam = 9D78YW7YJ6;
 						ProvisioningStyle = Automatic;
 					};
 					49DAEBFB1ECF039700FBC763 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = N34E47Y98M;
+						DevelopmentTeam = 9D78YW7YJ6;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 49DAEBE71ECF039700FBC763;
 					};
@@ -260,13 +260,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AWSIoTLightSwitch-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		BA1F178E62BFCBD5528C7B35 /* [CP] Copy Pods Resources */ = {
@@ -290,9 +293,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AWSIoTLightSwitch/Pods-AWSIoTLightSwitch-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AWSCore/AWSCore.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSIoT/AWSIoT.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSIoT.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -393,7 +403,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -436,7 +446,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -449,10 +459,11 @@
 			baseConfigurationReference = ABD99D28C367BC1C1EA5A9E0 /* Pods-AWSIoTLightSwitch.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = N34E47Y98M;
+				DEVELOPMENT_TEAM = 9D78YW7YJ6;
 				INFOPLIST_FILE = AWSIoTLightSwitch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jpmorgan.awm.awmias.AWSIoTLightSwitch;
+				PRODUCT_BUNDLE_IDENTIFIER = scot.dhappfactory.AWSIoTLightSwitch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -463,10 +474,11 @@
 			baseConfigurationReference = 7256A379C44E59FFAFBE2E52 /* Pods-AWSIoTLightSwitch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = N34E47Y98M;
+				DEVELOPMENT_TEAM = 9D78YW7YJ6;
 				INFOPLIST_FILE = AWSIoTLightSwitch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jpmorgan.awm.awmias.AWSIoTLightSwitch;
+				PRODUCT_BUNDLE_IDENTIFIER = scot.dhappfactory.AWSIoTLightSwitch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -477,7 +489,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = N34E47Y98M;
+				DEVELOPMENT_TEAM = 9D78YW7YJ6;
 				INFOPLIST_FILE = AWSIoTLightSwitchTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jpmorgan.awm.awmias.AWSIoTLightSwitchTests;
@@ -492,7 +504,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = N34E47Y98M;
+				DEVELOPMENT_TEAM = 9D78YW7YJ6;
 				INFOPLIST_FILE = AWSIoTLightSwitchTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jpmorgan.awm.awmias.AWSIoTLightSwitchTests;
