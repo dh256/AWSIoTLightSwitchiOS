@@ -130,7 +130,7 @@ class AWS {
         else
         {
             // get a unique client id
-            let uuid = UUID().uuidString;
+            let uuid = UID.sharedInstance.get()
             
             //
             // Connect to the AWS IoT service

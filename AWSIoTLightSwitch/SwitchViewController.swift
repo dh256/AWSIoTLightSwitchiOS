@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  SwitchViewController.swift
 //  AWSIoTDemo
 //
 //  Created by Hanley, David on 19/05/2017.
@@ -10,24 +10,20 @@ import UIKit
 
 class SwitchViewController: UIViewController {
     
-    var connected = false
-    
     // MARK: Outlets
     @IBOutlet weak var redSwitch: UISwitch!
     @IBOutlet weak var amberSwitch: UISwitch!
     @IBOutlet weak var greenSwitch: UISwitch!
     @IBOutlet weak var connectButton: UIBarButtonItem!
-    
     @IBOutlet weak var activityViewIndicator: UIActivityIndicatorView!
     
     // MARK: Actions
     @IBAction func doneButtonPressed(_ sender: UIBarButtonItem) {
-        if connected {
+        if AWS.isConnected() {
             AWS.disconnect()
         }
         self.dismiss(animated: true, completion: nil)
     }
-    
     
     /// Send on/off message to AWS IoT
     @IBAction func redLightSwitchPressed(_ sender: Any) {
@@ -69,7 +65,7 @@ class SwitchViewController: UIViewController {
         
         // Do any additional setup after loading the view, typically from a nib.
         setInitialLightState()
-        enableSwitches(enable: connected)
+        enableSwitches(enable: AWS.isConnected())
         
         // set button colour
         redSwitch.tintColor = UIColor.red
@@ -91,7 +87,6 @@ class SwitchViewController: UIViewController {
         // this should read from AWS
         Lights.sharedInstance.allOff()
     }
-
 
 }
 
