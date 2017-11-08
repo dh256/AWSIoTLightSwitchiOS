@@ -8,7 +8,9 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class SwitchViewController: UIViewController {
+    
+    var connected = false
     
     // MARK: Outlets
     @IBOutlet weak var redSwitch: UISwitch!
@@ -19,6 +21,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var activityViewIndicator: UIActivityIndicatorView!
     
     // MARK: Actions
+    @IBAction func doneButtonPressed(_ sender: UIBarButtonItem) {
+        if connected {
+            AWS.disconnect()
+        }
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     
     /// Send on/off message to AWS IoT
     @IBAction func redLightSwitchPressed(_ sender: Any) {
@@ -40,11 +49,19 @@ class ViewController: UIViewController {
         if !AWS.isConnected() {
             AWS.connect()
             connectButton.title = "Disconnect"
+            enableSwitches(enable: true)
         }
         else {
             AWS.disconnect()
             connectButton.title = "Connect"
+            enableSwitches(enable: false)
         }
+    }
+    
+    func enableSwitches(enable: Bool) {
+        redSwitch.isEnabled = enable
+        greenSwitch.isEnabled = enable
+        amberSwitch.isEnabled = enable
     }
     
     override func viewDidLoad() {
@@ -52,6 +69,7 @@ class ViewController: UIViewController {
         
         // Do any additional setup after loading the view, typically from a nib.
         setInitialLightState()
+        enableSwitches(enable: connected)
         
         // set button colour
         redSwitch.tintColor = UIColor.red
