@@ -26,7 +26,7 @@ class Light {
     func set(state: LightState, updateAWS: Bool = false) {
         self.state = state
         if updateAWS {
-            let jsonString = "{\"name\": \"\(name)\",\"state\": \(self.state.rawValue)}"
+            let jsonString = "{\"name\": \"\(name)\",\"state\": \(self.state.rawValue),\"fromdevice\": \"\(UID.sharedInstance.get())\"}"
             AWS.publish(string: jsonString)
         }
     }

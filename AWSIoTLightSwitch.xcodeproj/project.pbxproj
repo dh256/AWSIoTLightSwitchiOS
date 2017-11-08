@@ -21,6 +21,7 @@
 		49EE30361EF439F3006A37E1 /* Light.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EE30351EF439F3006A37E1 /* Light.swift */; };
 		49EE30371EF439F3006A37E1 /* Light.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EE30351EF439F3006A37E1 /* Light.swift */; };
 		5B71F98EA75469D87B47B523 /* Pods_AWSIoTLightSwitch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47B00387E002C158EBB5A6AF /* Pods_AWSIoTLightSwitch.framework */; };
+		6349F3181FB3B837009A309D /* UUID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6349F3171FB3B837009A309D /* UUID.swift */; };
 		EC71F80BB962D4215F4C2789 /* Pods_AWSIoTLightSwitch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D711F0A586C86DD2F45AA9F6 /* Pods_AWSIoTLightSwitch.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +53,7 @@
 		49DAEC0D1ECF29AA00FBC763 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		49EE302F1EF4284D006A37E1 /* AWS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AWS.swift; sourceTree = "<group>"; };
 		49EE30351EF439F3006A37E1 /* Light.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Light.swift; sourceTree = "<group>"; };
+		6349F3171FB3B837009A309D /* UUID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UUID.swift; sourceTree = "<group>"; };
 		7256A379C44E59FFAFBE2E52 /* Pods-AWSIoTLightSwitch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AWSIoTLightSwitch.release.xcconfig"; path = "Pods/Target Support Files/Pods-AWSIoTLightSwitch/Pods-AWSIoTLightSwitch.release.xcconfig"; sourceTree = "<group>"; };
 		ABD99D28C367BC1C1EA5A9E0 /* Pods-AWSIoTLightSwitch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AWSIoTLightSwitch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AWSIoTLightSwitch/Pods-AWSIoTLightSwitch.debug.xcconfig"; sourceTree = "<group>"; };
 		D711F0A586C86DD2F45AA9F6 /* Pods_AWSIoTLightSwitch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AWSIoTLightSwitch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -111,6 +113,7 @@
 				49DAEBF41ECF039700FBC763 /* LaunchScreen.storyboard */,
 				49EE302F1EF4284D006A37E1 /* AWS.swift */,
 				492CE6121EF7C92F009253CE /* Constants.swift */,
+				6349F3171FB3B837009A309D /* UUID.swift */,
 			);
 			path = AWSIoTLightSwitch;
 			sourceTree = "<group>";
@@ -325,6 +328,7 @@
 				49DAEBEC1ECF039700FBC763 /* AppDelegate.swift in Sources */,
 				49EE30361EF439F3006A37E1 /* Light.swift in Sources */,
 				49EE30301EF4284D006A37E1 /* AWS.swift in Sources */,
+				6349F3181FB3B837009A309D /* UUID.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
